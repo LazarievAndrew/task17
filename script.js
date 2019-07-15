@@ -10,14 +10,14 @@
 
 // Другой вариант записи:
 
-    // var person1 = {name: 'Vasia', sex: 'male', age: 25};
-    // var person2 = {name: 'Tania', sex: 'female',age: 34};
-    // var person3 = {name: 'Alex', sex: 'male', age: 18};
-    // var person4 = {name: 'Serge',sex: 'male', age: 37};
-    // var person5 = {name: 'Olia', sex: 'female', age: 21};
-    // var person6 = {name: 'Sara', sex: 'female', age: 51};
-    // var person7 = {name: 'Nata', sex: 'female', age: 35};
-    // var person8 = {name: 'Kolia', sex: 'male', age: 42};
+    // var person1 = {name: 'Vasia', sex: 'male', age: 1995};
+    // var person2 = {name: 'Tania', sex: 'female',age: 1984};
+    // var person3 = {name: 'Alex', sex: 'male', age: 2001};
+    // var person4 = {name: 'Serge',sex: 'male', age: 2003};
+    // var person5 = {name: 'Olia', sex: 'female', age: 1998};
+    // var person6 = {name: 'Sara', sex: 'female', age: 1966};
+    // var person7 = {name: 'Nata', sex: 'female', age: 1981};
+    // var person8 = {name: 'Kolia', sex: 'male', age: 1976};
 
     // var people = [ person1, person2, person3, person4, person5, person6, person7, person8];
 
