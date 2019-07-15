@@ -21,15 +21,15 @@
 
     // var people = [ person1, person2, person3, person4, person5, person6, person7, person8];
 
-    var people = [{name: 'Vasia', sex: 'male', age: 25},{name: 'Tania', sex: 'female',age: 34},
-                    {name: 'Alex', sex: 'male', age: 18},{name: 'Serge',sex: 'male', age: 37},
-                    {name: 'Olia', sex: 'female', age: 21},{name: 'Sara', sex: 'female', age: 51},
-                    {name: 'Nata', sex: 'female', age: 35},{name: 'Kolia', sex: 'male', age: 42}];
+    var people = [{name: 'Vasia', sex: 'male', age: 1995},{name: 'Tania', sex: 'female',age: 1984},
+                    {name: 'Alex', sex: 'male', age: 2001},{name: 'Serge',sex: 'male', age: 2003},
+                    {name: 'Olia', sex: 'female', age: 1998},{name: 'Sara', sex: 'female', age: 1966},
+                    {name: 'Nata', sex: 'female', age: 1981},{name: 'Kolia', sex: 'male', age: 1976}];
 
     function averageAge(x){
         var totalAge = 0;
         for(var i = 0; i < x.length; i++){
-            totalAge += x[i].age;
+            totalAge += (new Date().getFullYear() - x[i].age);
         }
         return Math.round (totalAge / x.length);
     }
@@ -55,5 +55,5 @@
     }
 
         
-    console.log ('Средний возраст ' + averageAge(people) + ' года.');
+    console.log ('Средний возраст ' + averageAge(people) + ' год.');
     console.log (humanSex(people));
