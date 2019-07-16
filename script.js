@@ -34,26 +34,20 @@
         return Math.round (totalAge / x.length);
     }
 
-    function humanSex(x){
-        var maleSex = 0; 
-        var femaleSex = 0;
-        for (var i = 0; i < x.length; i++){
-            switch (x[i].sex){
-                case 'male': maleSex++;
-                    break;
-                case 'female': femaleSex++;
-                    break;
-            }
-        }
-        if ( maleSex > femaleSex ){
-            return 'Мужчин больше.';
-        } else if( maleSex < femaleSex ){
-            return 'Женщин больше.';
-        } else {
-            return 'Одинаковое количество мужчин и женщин.'
-        }
-    }
-
-        
     console.log ('Средний возраст ' + averageAge(people) + ' год.');
-    console.log (humanSex(people));
+
+
+    var countMale = people.filter(function(men){
+        return men.sex === 'male';
+    });
+
+    var countFemale = people.length - countMale.length;
+
+    if (countMale.length > countFemale){
+        console.log ('Мужчин больше.');
+
+    } else if (countMale.length < countFemale){
+        console.log ('Женщин больше.');
+    } else {
+        console.log ('Одинаковое количество мужчин и женщин.');
+    }
